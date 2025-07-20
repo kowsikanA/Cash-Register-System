@@ -1,0 +1,130 @@
+.input-pallete{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+  
+
+}
+
+.input-pallete button{
+  padding: 35px 35px;
+  font-size: 35px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 67);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  color: white;
+  border: 8px solid silver;
+  font-weight: bold;
+  box-shadow:  4px 10px  rgba(0, 0, 0, 0.2);
+}
+
+.input-pallete button:hover{
+  background-color:  rgb(0, 0, 177);
+  color: white;
+  transform: scale(1.1);
+
+
+}
+
+.console{
+  background: linear-gradient(orange, yellow);
+  color: black;
+  font-size: 15px;
+  padding: 1rem;
+  font-weight: 700;
+  height: 75%;
+  border: 10px solid rgb(101, 101, 255);
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+
+}
+
+body{
+  background-color: rgb(255, 238, 5);
+
+}
+
+.num-button{
+  background: black;
+  color: yellow;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 7px 15px;
+  border: 5px solid;
+  /* border-color:  rgb(182, 182, 182); */
+  cursor: pointer;
+
+}
+
+
+.num-button:active{
+  background-color: rgb(107, 106, 106);
+}
+
+
+
+.cash-btn{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.clear-btn{
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.cash-btn{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.clear-btn{
+
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.random-btn{
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+
+.cash-btn, .clear-btn, .random-btn{
+  border: 6px solid gray;
+  margin-bottom: -15px;
+  background-color: gold ;
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius:10px;
+  cursor: pointer;
+}
+.cash-btn:active, .clear-btn:active, .random-btn:active{
+  background-color: rgb(246, 229, 131) ;
+}
+
+
+.number-keys{
+  background-color: rgb(101, 101, 255);
+  padding: 20px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px 5px;
+  
+}
+
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+  

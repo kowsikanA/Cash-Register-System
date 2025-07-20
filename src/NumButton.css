@@ -1,0 +1,16 @@
+.num-button{
+  background: black;
+  color: yellow;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 7px 15px;
+  border: 5px solid;
+  /* border-color:  rgb(182, 182, 182); */
+  cursor: pointer;
+
+}
+
+.num-button:active{
+    background-color: rgb(107, 106, 106);
+
+}

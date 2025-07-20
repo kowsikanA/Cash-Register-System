@@ -1,0 +1,12 @@
+.title-bar{
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: yellow;
+  background-color: rgb(101, 101, 255);
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  margin: 0;
+
+}
