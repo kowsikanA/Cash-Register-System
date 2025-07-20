@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Sample.css'
 import NumButton from './NumButton';
 
 function Sample() {
 
 
-  const [clickedIndexHistory, setClickedIndexHistory] = useState([]);
+  const [clickedIndexHistory, setClickedIndexHistory] = useState([]); // sets a default empty array
   const [totalCost, setTotalCost] = useState(0); // sets the default value of totalCost to 0
   const [displayInfo, setDisplayInfo] = useState(false); // makes sure the information is displayed
 
@@ -19,9 +19,9 @@ function Sample() {
   function randomize(){
     let value;
     if (clickedIndexHistory.length !== 5){      
-      value = Math.floor(Math.random() * 20) + 1;
-      if (!clickedIndexHistory.includes(value)){
-        setClickedIndexHistory([...clickedIndexHistory, value])
+      value = Math.floor(Math.random() * 20) + 1; // random number between 1 to 20
+      if (!clickedIndexHistory.includes(value)){ // if the index previously clicked is not in the list to avoid duplication
+        setClickedIndexHistory([...clickedIndexHistory, value]) // adds the value in the list 
       }
     }
     
@@ -39,10 +39,10 @@ function Sample() {
   }
 
 
-  function descriptionMarks() {
+  function descriptionMarks() { // a fucntion that returns a description array 
     const descriptions = [];
     for (let i = 0; i < clickedIndexHistory.length; i++) {
-      descriptions.push("Mark: " + clickedIndexHistory[i]);
+      descriptions.push("Mark: " + clickedIndexHistory[i]); // puts the description into the array 
     }
     return descriptions;
   }
@@ -50,35 +50,40 @@ function Sample() {
   function customerCost(value) {
     if (clickedIndexHistory.length == 5) {
       let total = totalCost + value;
-      setTotalCost(total);
+      setTotalCost(total);// sets the total cost
     } else{
-      window.alert("You have to click on the 5 number palletes first");
+      window.alert("You have to click on the 5 number palletes first"); // makes sure that the customer should pick 5 
     }
   }
 
 
-  function reset() {
-    setClickedIndexHistory([]);
+  function reset() {// resets all state functions to default
+    setClickedIndexHistory([]); 
     setTotalCost(0);
+    setDisplayInfo(false);
   }
 
   return (
     <div className="container">
-      <div className="input-pallete">
-        <button className='btn' onClick={() => customerCost(1)}>$1</button>
-        <button className='btn' onClick={() => customerCost(5)}>$5</button>
-        <button className='btn' onClick={() => customerCost(10)}>$10</button>
-        <button className='btn' onClick={() => customerCost(20)}>$20</button>
+
+      <div>
+        <img src='./lottery-balls.png' style={{height: '150px', width: ''}}/> 
+        <div className="input-pallete">
+          <button className='btn' onClick={() => customerCost(1)}>$1</button>
+          <button className='btn' onClick={() => customerCost(5)}>$5</button>
+          <button className='btn' onClick={() => customerCost(10)}>$10</button>
+          <button className='btn' onClick={() => customerCost(20)}>$20</button>
+        </div>
+
       </div>
 
       <div className="number-keys">
         {numButtons.map((index) =>
-          // <button key={index} style={{ borderColor: clickedIndexHistory.includes(index) ? 'red' : 'rgb(182, 182, 182)' }} className='btn num-button' onClick={() => addIndex(index)} onDoubleClick={() => setClickedIndexHistory(clickedIndexHistory.filter(clickedIndex => clickedIndex !== index))}>{index}</button>
           <NumButton className='btn num-button' key={index} numberIndex={index} checkSelect={clickedIndexHistory.includes(index)} buttonSelect={addIndex} buttonDeselect={() => setClickedIndexHistory(clickedIndexHistory.filter(clickedIndex => clickedIndex !== index))}/>
 
         )}
 
-        <button className='btn cash-btn' onClick={()=>setDisplayInfo(true)}>Cash</button>
+        <button className='btn cash-btn' onClick={()=>setDisplayInfo(true)}>Cash</button> 
         <button className='btn clear-btn'
           onClick={() => reset()}>Clear</button>
 
@@ -89,14 +94,19 @@ function Sample() {
       <div className="console">
         <div className="information">
           <p>Numbers Selected</p>
-
-          {displayInfo && descriptionMarks().map((describe) =>
+          {displayInfo && descriptionMarks().map((describe) => // would display the information if displayInfo is true
             <p> {describe}</p>
           )}
 
         </div>
       
-        <p className='cost-value'>Total: ${totalCost}</p>
+        {displayInfo && // would display info if displayInfo is true
+        <p className='cost-value'>
+          
+          Total: ${totalCost}
+          
+          </p>
+        }
       </div>
     </div>
   )
