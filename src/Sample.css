@@ -45,6 +45,12 @@
 
 }
 
+.image{
+  height: 100px;
+  padding-left: 50px;
+
+}
+
 body{
   background-color: rgb(255, 238, 5);
 
@@ -77,16 +83,6 @@ body{
   grid-column-start: 5;
   grid-column-end: 7;
 }
-.cash-btn{
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-.clear-btn{
-
-  grid-column-start: 5;
-  grid-column-end: 7;
-}
-
 .random-btn{
   padding: 10px;
   grid-column-start: 1;
@@ -128,3 +124,13 @@ body{
 }
 
   
+@media only screen and (max-width: 1390px){
+  .input-pallete button{
+   padding: 20px 20px;
+    
+  }
+  .image{
+    height: 90px;
+    padding-left: 50px;
+ }
+}

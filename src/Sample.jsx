@@ -50,7 +50,7 @@ function Sample() {
   function customerCost(value) {
     if (clickedIndexHistory.length == 5) {
       let total = totalCost + value;
-      setTotalCost(total);// sets the total cost
+      setTotalCost(total);// sets the total cost 
     } else{
       window.alert("You have to click on the 5 number palletes first"); // makes sure that the customer should pick 5 
     }
@@ -67,7 +67,7 @@ function Sample() {
     <div className="container">
 
       <div>
-        <img src='./lottery-balls.png' style={{height: '150px', width: ''}}/> 
+        <img className='image' src='./lottery-balls.png' /> 
         <div className="input-pallete">
           <button className='btn' onClick={() => customerCost(1)}>$1</button>
           <button className='btn' onClick={() => customerCost(5)}>$5</button>

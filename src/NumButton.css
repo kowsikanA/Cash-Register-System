@@ -14,3 +14,11 @@
     background-color: rgb(107, 106, 106);
 
 }
+
+@media only screen and (max-width: 1390px){
+  .num-button{
+    font-size: 25px;
+    padding: 5px 10px;
+
+  }
+}
