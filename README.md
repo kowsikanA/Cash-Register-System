@@ -1,12 +1,71 @@
-# React + Vite
+## 📋 WHE WHE Cash Register System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based **Cash Register System** built as part of the WEB301 Assignment 02. It simulates a cashier interface for a fictional lottery game called **WHE WHE**, where customers select 5 numbers and assign a monetary value to their ticket.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Features
 
-## Expanding the ESLint configuration
+- Choose **exactly 5 numbers** between 1 and 20.
+- Prevent selection of more than 5 numbers.
+- Visually highlight selected numbers.
+- Display selected numbers in a side panel.
+- Assign monetary values **only after** number selection.
+- Add up money using preset value buttons.
+- Random number generation with a **"Random"** button.
+- Clear all selections with a **"Clear"** button.
+- Finalize the ticket using the **"Cash"** button.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Built With
+
+- React (Functional Components + Hooks)
+- CSS for styling (inline, module or styled-components accepted)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+\`\`\`bash
+git clone https://github.com/your-username/whe-whe-cash-register.git
+cd whe-whe-cash-register
+\`\`\`
+
+2. Install dependencies:
+
+\`\`\`bash
+npm install
+# or
+yarn install
+\`\`\`
+
+3. Start the development server:
+
+\`\`\`bash
+npm start
+# or
+yarn start
+\`\`\`
+
+The app will run on [http://localhost:3000](http://localhost:3000)
+https://drive.google.com/file/d/1OzzHzOuidE5wp1gdd9S71rH7sVcVEBIR/view?usp=sharing 
+---
+
+## 📹 Demonstration
+
+A video demonstration of the working app with audio explanation has been provided as required.
+
+---
+
+
+
