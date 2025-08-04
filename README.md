@@ -16,14 +16,12 @@ This is a React-based **Cash Register System** built as part of the WEB301 Assig
 - Clear all selections with a **"Clear"** button.
 - Finalize the ticket using the **"Cash"** button.
 
----
 
 ## 🛠️ Built With
 
 - React (Functional Components + Hooks)
 - CSS for styling (inline, module or styled-components accepted)
 
----
 
 ## 🚀 Getting Started
 
@@ -54,15 +52,11 @@ yarn install
 \`\`\`bash
 npm start
 # or
-yarn start
+npm run dev start
 \`\`\`
-
-The app will run on [http://localhost:3000](http://localhost:3000)
----
-
 ## 📹 Demonstration
 
-https://drive.google.com/file/d/1OzzHzOuidE5wp1gdd9S71rH7sVcVEBIR/view?usp=sharing 
+https://drive.google.com/file/d/1OzzHzOuidE5wp1gdd9S71rH7sVcVEBIR/view?usp=sharing(https://drive.google.com/file/d/1OzzHzOuidE5wp1gdd9S71rH7sVcVEBIR/view?usp=drive_link)
 
 
 A video demonstration of the working app with audio explanation has been provided as required.
