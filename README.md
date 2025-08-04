@@ -43,7 +43,7 @@ cd whe-whe-cash-register
 
 \`\`\`bash
 npm install
-# or
+or
 yarn install
 \`\`\`
 
@@ -51,7 +51,7 @@ yarn install
 
 \`\`\`bash
 npm start
-# or
+or
 npm run dev start
 \`\`\`
 ## 📹 Demonstration
