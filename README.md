@@ -30,30 +30,7 @@ This is a React-based **Cash Register System** built as part of the WEB301 Assig
 - Node.js (v18 or later recommended)
 - npm or yarn
 
-### Installation
 
-1. Clone the repository:
-
-\`\`\`bash
-git clone https://github.com/your-username/whe-whe-cash-register.git
-cd whe-whe-cash-register
-\`\`\`
-
-2. Install dependencies:
-
-\`\`\`bash
-npm install
-or
-yarn install
-\`\`\`
-
-3. Start the development server:
-
-\`\`\`bash
-npm start
-or
-npm run dev start
-\`\`\`
 ## 📹 Demonstration
 
 https://drive.google.com/file/d/1OzzHzOuidE5wp1gdd9S71rH7sVcVEBIR/view?usp=sharing(https://drive.google.com/file/d/1OzzHzOuidE5wp1gdd9S71rH7sVcVEBIR/view?usp=drive_link)
